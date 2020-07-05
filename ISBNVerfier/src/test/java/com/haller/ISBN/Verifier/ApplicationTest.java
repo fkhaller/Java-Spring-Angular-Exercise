@@ -21,7 +21,7 @@ public class ApplicationTest {
 	private TestRestTemplate restTemplate;
         
         @Test
-	public void exampleTest() throws Exception {
+	public void isbnVerificationTest() throws Exception {
 		String body = this.restTemplate.getForObject(VERIFICATION_ENDPOINT + "?" + FAIL_13ISBN_10ISBN, String.class);
                 assertThat(body).isEqualTo(RESPONSE_TO_VALIDATE);
 	}
