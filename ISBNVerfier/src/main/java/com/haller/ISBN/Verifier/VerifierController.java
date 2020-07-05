@@ -27,6 +27,7 @@ public class VerifierController {
         
         for (String isbn : isbns.split(",")) {
             VerificationResponse partialResponse = new VerificationResponse();
+            partialResponse.ISBN = isbn;
             partialResponse.isISBN10 = ISBNValidator.getInstance(false).isValidISBN10(isbn);
             partialResponse.isISBN13 = ISBNValidator.getInstance(false).isValidISBN13(isbn);
 

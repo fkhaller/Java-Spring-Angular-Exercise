@@ -6,12 +6,22 @@ package com.haller.ISBN.Verifier;
  */
 public class VerificationResponse {
     
+    String ISBN;
     boolean isISBN10;
     boolean isISBN13;
     
     public VerificationResponse() {
+        ISBN = "";
         isISBN10 = false;
         isISBN13 = false;
+    }
+    
+    public String getISBN() {
+        return ISBN;
+    }
+
+    public void setISBN(String ISBN) {
+        this.ISBN = ISBN;
     }
 
     public boolean isIsISBN10() {
@@ -29,5 +39,4 @@ public class VerificationResponse {
     public void setIsISBN13(boolean isISBN13) {
         this.isISBN13 = isISBN13;
     }
-    
 }
