@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<link rel="stylesheet" type="text/css" href="index.css"/>
+<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+<body>
+    
+    <h1>ISBN Validator</h1>
+    <div ng-app="isbnVerifier" ng-controller="myCtrl" >
+
+        <p>Enter a comma separated list of ISBNs :</p>
+        <textarea ng-model="isbn"></textarea><br>
+        <button ng-click="verify()">Verify</button>
+        <p class="notification" ng-repeat="x in verifications">{{x}}</p>
+        <p class="error">{{errortext}}</p>
+
+    </div>
+    <script type="text/javascript" src="verification.js"></script>
+
+</body>
+</html>
