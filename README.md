@@ -1,4 +1,4 @@
-# Paychex Coding Exercise
+# Coding Exercise
 
 Following these requirments :
 
